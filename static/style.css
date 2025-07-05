@@ -1,0 +1,146 @@
+body {
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.container-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color:white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.description {
+  font-size: 20px;
+  color: #fffcf2;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.ml-container {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+form input[type="text"], 
+form input[type="number"], 
+form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.my-cta-button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color:#bb95d3 ;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-cta-button:hover {
+  background-color: #b57ad9;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+}
+
+.contact {
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  margin: 0 10px;
+  color: #ffd166;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #bb95d3;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #06d6a0;
+}
+
+/* Result Styling */
+.result-high-risk {
+  color: #ff4d6d;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.result-low-risk {
+  color: #06d6a0;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 20px;
+}

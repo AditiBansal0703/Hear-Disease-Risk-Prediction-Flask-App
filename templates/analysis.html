@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Heart Disease Prediction</div>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/predict">Predict</a></li>
+    <li><a href="/analysis">Analysis</a></li>
+    <li><a href="/tips">Healthy Tips</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Heart Disease Risk Analysis</h1>
+
+    <h2>Feature Correlation Heatmap</h2>
+    <img src="static/heatmap.png" alt="Feature Correlation Heatmap" width="80%">
+
+    <h2>Target Distribution (Heart Disease Risk)</h2>
+    <img src="static/target_distribution.png" alt="Target Distribution" width="50%">
+
+    <h2>Pairplot of Features vs Target</h2>
+    <img src="static/pairplot.png" alt="Pairplot" width="80%">
+
+    <h2>Distribution of Age</h2>
+    <img src="static/Age_distribution.png" alt="Age Distribution" width="50%">
+
+    <h2>Distribution of Chronic Stress</h2>
+    <img src="static/Chronic_Stress_distribution.png" alt="Chronic Stress Distribution" width="50%">
+
+    <h2>Distribution of Fatigue</h2>
+    <img src="static/Fatigue_distribution.png" alt="Fatigue Distribution" width="50%">
+
+    <h2>Boxplot of Age by Heart Risk</h2>
+    <img src="static/Age_boxplot.png" alt="Age Boxplot" width="50%">
+
+    <h2>Boxplot of Chronic Stress by Heart Risk</h2>
+    <img src="static/Chronic_Stress_boxplot.png" alt="Chronic Stress Boxplot" width="50%">
+
+    <h2>Boxplot of Fatigue by Heart Risk</h2>
+    <img src="static/Fatigue_boxplot.png" alt="Fatigue Boxplot" width="50%">
+
+    <h2>Gender Count by Heart Risk</h2>
+    <img src="static/Gender_countplot.png" alt="Gender Countplot" width="50%">
+
+    <h2>Smoking Count by Heart Risk</h2>
+    <img src="static/Smoking_countplot.png" alt="Smoking Countplot" width="50%">
+
+    <h2>Family History Count by Heart Risk</h2>
+    <img src="static/Family_History_countplot.png" alt="Family History Countplot" width="50%">
+
+    <h2>Numerical Pairplot (Age, Chronic Stress, Fatigue)</h2>
+    <img src="static/numerical_pairplot.png" alt="Numerical Pairplot" width="80%">
+</div>
+
+</body>
+</html>

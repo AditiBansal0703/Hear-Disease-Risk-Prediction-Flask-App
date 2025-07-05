@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Heart Disease Risk Prediction</div>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/predict">Predict</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2 class="container-heading">Prediction Result</h2>
+  <div class="description">
+    {% if prediction == 1 %}
+  <p style="color: red;">⚠️ High Risk Detected! (Probability: {{ probability }}%)</p>
+{% else %}
+  <p style="color: green;">✅ Low Risk Detected! (Probability: {{ probability }}%)</p>
+{% endif %}
+  </div>
+</div>
+
+</body>
+</html>

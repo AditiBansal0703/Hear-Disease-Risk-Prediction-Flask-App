@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Disease Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Heart Disease Prediction </div>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/predict">Predict</a></li>
+    <li><a href="/analysis">Analysis</a></li>
+    <li><a href="/tips">Healthy Tips</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h2 class="container-heading">Welcome to HeartCare </h2>
+
+  <div class="description">
+    <p>Heart disease is one of the leading causes of death worldwide.</p>
+    <p>It occurs when the blood vessels that supply the heart become narrowed or blocked.</p>
+    <p><b>This Machine Learning model</b> can predict the likelihood of heart disease based on several health factors.</p>
+
+    <h3>Why early prediction is important?</h3>
+    <ul style="text-align: left;">
+      <li>🧠 Early detection = Better treatment options!</li>
+      <li>💓 Lifestyle changes can reverse risk factors.</li>
+      <li>🏥 Regular monitoring reduces fatal outcomes.</li>
+    </ul>
+
+    <p><a href="/predict" class="my-cta-button">Check Your Heart Risk Now</a></p>
+  </div>
+</div>
+
+</body>
+</html>
